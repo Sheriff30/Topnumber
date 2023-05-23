@@ -6,10 +6,19 @@
   box-sizing: inherit;
 }
 
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
+
+
+@media screen and (max-height: 83em) {
+  html {
+    font-size: 20%;
+  }
+}
+
 
 @media screen and (max-width: 83em) {
   html {
