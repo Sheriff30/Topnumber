@@ -26,16 +26,7 @@ html {
     font-size: 25%;
   }
 }
-@media screen and (max-width: 23.4rem) {
-  html {
-    font-size: 15%;
-  }
-}
-@media screen and (max-width: 14.75rem) {
-  html {
-    font-size: 10%;
-  }
-}
+
 
 body {
   font-family: 'Nunito', sans-serif;
