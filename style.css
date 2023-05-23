@@ -13,11 +13,6 @@ html {
 }
 
 
-@media screen and (max-height: 83em) {
-  html {
-    font-size: 20%;
-  }
-}
 
 
 @media screen and (max-width: 83em) {
