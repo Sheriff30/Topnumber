@@ -11,19 +11,25 @@ html {
   box-sizing: border-box;
 }
 
-@media (max-width: 50rem) {
+@media (max-width: 55em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 43em) {
+  html {
+    font-size: 45%;
+  }
+}
+@media (max-width: 32.5em) {
   html {
     font-size: 40%;
   }
 }
-@media (max-width: 35rem) {
+@media (max-width: 22em) {
   html {
     font-size: 25%;
-  }
-}
-@media (max-width: 24rem) {
-  html {
-    font-size: 5%;
   }
 }
 
@@ -41,8 +47,8 @@ body {
 /* LAYOUT */
 main {
   position: relative;
-  width: 100rem;
-  height: 60rem;
+  width: min(99%, 100rem);
+  height: min(99%, 60rem);
   background-color: rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(200px);
   filter: blur();
@@ -50,7 +56,6 @@ main {
   border-radius: 9px;
   overflow: hidden;
   display: flex;
-  margin: 0 5rem;
 }
 
 .player {
@@ -62,6 +67,22 @@ main {
   transition: all 0.75s;
 }
 
+@media (max-width: 34.5em) {
+  .player {
+    padding: 3rem;
+  }
+}
+@media (max-width: 22em) {
+  .player {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-height: 13em) {
+  .player {
+    padding: 0.5rem;
+  }
+}
 /* ELEMENTS */
 .name {
   position: relative;
@@ -71,6 +92,12 @@ main {
   word-spacing: 2px;
   font-weight: 300;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 22em) {
+  .name {
+    font-size: 2.5rem;
+  }
 }
 
 .score {
@@ -103,6 +130,19 @@ main {
   padding: 2rem;
   text-align: center;
   transition: all 0.75s;
+}
+
+@media (max-height: 21.5em) {
+  .current {
+    padding: 1rem;
+    width: 40%;
+  }
+}
+@media (max-height: 13em) {
+  .current {
+    padding: 0.5rem;
+    width: 30%;
+  }
 }
 
 .current-label {
@@ -147,14 +187,14 @@ main {
 }
 
 .btn--new {
-  top: 4rem;
+  top: 39%;
 }
 
 .btn--roll {
-  top: 39.3rem;
+  top: 55%;
 }
 .btn--hold {
-  top: 46.1rem;
+  top: 65%;
 }
 
 .btn:active {
@@ -169,7 +209,7 @@ main {
 .dice {
   position: absolute;
   left: 50%;
-  top: 16.5rem;
+  top: 20%;
   transform: translateX(-50%);
   height: 10rem;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
