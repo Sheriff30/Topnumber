@@ -4,10 +4,18 @@ const score0El = document.querySelector('#score--0');
 const score1El = document.querySelector('#score--1');
 const current0El = document.querySelector('#current--0');
 const current1El = document.querySelector('#current--1');
+const current0 = document.querySelector('.current0');
+const current1 = document.querySelector('.current1');
 const player0El = document.querySelector('.player--0');
 const player1El = document.querySelector('.player--1');
 const overlay = document.querySelector('.overlay');
 const howitworks = document.querySelector('.works');
+const btnSettings = document.querySelector('.btn--settings');
+const btnColor = document.querySelector('.btn--color');
+const label0 = document.querySelector('.label0');
+const label1 = document.querySelector('.label1');
+const name0 = document.querySelector('#name--0');
+const name1 = document.querySelector('#name--1');
 
 const diceEl = document.querySelector('.dice');
 const btnNew = document.querySelector('.btn--new');
@@ -82,4 +90,21 @@ btnNew.addEventListener('click', init);
 btnStart.addEventListener('click', function () {
   overlay.classList.add('hidden');
   howitworks.classList.add('hidden');
+});
+
+btnSettings.addEventListener('click', function () {
+  btnColor.classList.toggle('hidden');
+});
+
+btnColor.addEventListener('click', function () {
+  document.body.style.backgroundImage =
+    ' linear-gradient(to top left, #a0e0ab 0%, #339a46 100%) ';
+  score0El.style.color = '#d9f2dd';
+  score1El.style.color = '#d9f2dd';
+  current0.style.backgroundColor = '#53c668';
+  current1.style.backgroundColor = '#53c668';
+  label0.style.color = '#fff';
+  label1.style.color = '#fff';
+  name0.style.color = '#d9f2dd';
+  name1.style.color = '#d9f2dd';
 });
