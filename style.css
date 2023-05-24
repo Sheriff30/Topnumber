@@ -193,26 +193,26 @@ main {
 }
 
 .btn--new {
-  top: 45%;
+  top: 40%;
 }
 
 .btn--roll {
-  top: 63%;
+  top: 55%;
 }
 .btn--hold {
-  top: 75%;
+  top: 65%;
 }
 
-@media (max-height: 20em) {
+@media (max-height: 30em) {
   .btn--new {
-    top: 50%;
+    top: 45%;
   }
 
   .btn--roll {
-    top: 69%;
+    top: 63%;
   }
   .btn--hold {
-    top: 85%;
+    top: 75%;
   }
 }
 
