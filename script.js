@@ -95,17 +95,15 @@ btnStart.addEventListener('click', function () {
 btnSettings.addEventListener('click', function () {
   btnColor.classList.toggle('hidden');
 });
-
 btnColor.addEventListener('click', function () {
-    btnColor.classList.add('hidden');
-  document.body.style.backgroundImage =
-    ' linear-gradient(to top left, #a0e0ab 0%, #339a46 100%) ';
-  score0El.style.color = '#d9f2dd';
-  score1El.style.color = '#d9f2dd';
-  current0.style.backgroundColor = '#53c668';
-  current1.style.backgroundColor = '#53c668';
-  label0.style.color = '#fff';
-  label1.style.color = '#fff';
-  name0.style.color = '#d9f2dd';
-  name1.style.color = '#d9f2dd';
+  btnColor.classList.add('hidden');
+  document.body.classList.toggle('bodybackgorund');
+  score0El.classList.toggle('green-white');
+  score1El.classList.toggle('green-white');
+  current0.classList.toggle('greenbackground');
+  current1.classList.toggle('greenbackground');
+  label0.classList.toggle('white-color');
+  label1.classList.toggle('white-color');
+  name0.classList.toggle('green-white');
+  name1.classList.toggle('green-white');
 });
