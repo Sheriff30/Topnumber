@@ -97,6 +97,7 @@ btnSettings.addEventListener('click', function () {
 });
 
 btnColor.addEventListener('click', function () {
+    btnColor.classList.add('hidden');
   document.body.style.backgroundImage =
     ' linear-gradient(to top left, #a0e0ab 0%, #339a46 100%) ';
   score0El.style.color = '#d9f2dd';
