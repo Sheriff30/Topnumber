@@ -334,7 +334,6 @@ main {
 .hidden {
   display: none;
 }
-
 .white-color {
   color: #fff;
 }
@@ -350,4 +349,5 @@ main {
 .bodybackgorund {
   background-image: linear-gradient(to top left, #a0e0ab 0%, #339a46 100%);
 }
+
 
