@@ -334,3 +334,20 @@ main {
 .hidden {
   display: none;
 }
+
+.white-color {
+  color: #fff;
+}
+
+.green-white {
+  color: #d9f2dd;
+}
+
+.greenbackground {
+  background-color: #53c668;
+}
+
+.bodybackgorund {
+  background-image: linear-gradient(to top left, #a0e0ab 0%, #339a46 100%);
+}
+
