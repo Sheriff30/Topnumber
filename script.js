@@ -6,12 +6,15 @@ const current0El = document.querySelector('#current--0');
 const current1El = document.querySelector('#current--1');
 const player0El = document.querySelector('.player--0');
 const player1El = document.querySelector('.player--1');
+const overlay = document.querySelector('.overlay');
+const howitworks = document.querySelector('.works');
 
 const diceEl = document.querySelector('.dice');
 const btnNew = document.querySelector('.btn--new');
 const btnHold = document.querySelector('.btn--hold');
 const btnRoll = document.querySelector('.btn--roll');
 const players = document.querySelectorAll('.player');
+const btnStart = document.querySelector('.btn--start');
 
 const switchPlyer = function () {
   document.querySelector(`#current--${activePlayer}`).textContent = 0;
@@ -75,3 +78,8 @@ btnHold.addEventListener('click', function () {
 });
 
 btnNew.addEventListener('click', init);
+
+btnStart.addEventListener('click', function () {
+  overlay.classList.add('hidden');
+  howitworks.classList.add('hidden');
+});
