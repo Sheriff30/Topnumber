@@ -193,29 +193,26 @@ main {
 }
 
 .btn--new {
-  top: 39%;
+  top: 45%;
 }
 
 .btn--roll {
-  top: 55%;
+  top: 63%;
 }
 .btn--hold {
-  top: 65%;
+  top: 75%;
 }
 
 @media (max-height: 20em) {
   .btn--new {
     top: 50%;
-    padding: 0.5rem;
   }
 
   .btn--roll {
     top: 69%;
-    padding: 0.5rem;
   }
   .btn--hold {
     top: 85%;
-    padding: 0.5rem;
   }
 }
 
