@@ -73,8 +73,8 @@ body {
   font-size: 2rem;
   background-color: white;
   position: absolute;
-  padding: 2rem;
-  width: 45rem;
+  padding: 3rem;
+  width: min(90%, 80rem);
   z-index: 200;
   opacity: 90%;
 }
