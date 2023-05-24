@@ -11,22 +11,21 @@ html {
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 85rem) {
+@media screen and (max-width: 51rem) {
   html {
     font-size: 50%;
   }
 }
-@media screen and (max-width: 43rem) {
+@media screen and (max-width: 35.8rem) {
   html {
-    font-size: 35%;
+    font-size: 30%;
   }
 }
-@media screen and (max-width: 31.5rem) {
+@media screen and (max-width: 26.75rem) {
   html {
-    font-size: 25%;
+    font-size: 20%;
   }
 }
-
 
 body {
   font-family: 'Nunito', sans-serif;
@@ -73,11 +72,23 @@ main {
   margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 26.75rem) {
+  .name {
+    font-size: 2rem;
+  }
+}
+
 .score {
   font-size: 8rem;
   font-weight: 300;
   color: #c7365f;
   margin-bottom: auto;
+}
+
+@media screen and (max-width: 26.75rem) {
+  .score {
+    font-size: 4rem;
+  }
 }
 
 .player--active {
@@ -114,6 +125,12 @@ main {
 
 .current-score {
   font-size: 3.5rem;
+}
+@media screen and (max-width: 26.75rem) {
+  .current-score,
+  .current-label {
+    font-size: 1rem;
+  }
 }
 
 /* ABSOLUTE POSITIONED ELEMENTS */
@@ -187,4 +204,3 @@ main {
 .hidden {
   display: none;
 }
-
